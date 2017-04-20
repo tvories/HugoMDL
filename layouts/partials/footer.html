@@ -10,6 +10,8 @@
         <div class="mdl-layout__obfuscator"></div>
     </div>
     <script src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
     {{ if .IsPage }} {{ if ( eq .Type "post" ) }}<script src="/js/prism.js"></script>{{ end }}{{ end }}
     {{ if .IsNode }} {{ partial "JS-cardmedia.html" . }} {{ partial "JS-fabbutton.html" . }}{{end}}
 </body>
