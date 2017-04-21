@@ -34,7 +34,9 @@
         {{ else }}
           {{ $.Scratch.Set "mdlAccent" "orange" }}
         {{ end }}
-
+        <link href='//fonts.googleapis.com/css?family=Roboto:400,300,700|Noto+Serif:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans+Caption" rel="stylesheet" type='text/css'>
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en"/>
         <link rel="stylesheet" href="/css/ionicons.min.css"/>
         <!-- <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.1.3/material.{{ $.Scratch.Get "mdlPrimary" }}-{{ $.Scratch.Get "mdlAccent" }}.min.css"/> -->
@@ -42,7 +44,7 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <link rel="stylesheet" href="/css/styles.css"/>
         <!-- Highlighting-->
-        <link rel="stylesheet" href="{{ .Site.BaseURL }}css/highlightjs/monokai.css">
+        <link rel="stylesheet" href="{{ .Site.BaseURL }}css/highlightjs/obsidian.css">
         {{ if .IsPage }} {{ if ( eq .Type "post" ) }} <link rel="stylesheet" href="/css/prism.css" /> {{end}} {{end}}
 </head>
 
