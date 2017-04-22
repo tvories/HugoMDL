@@ -24,16 +24,17 @@
         <meta name="msapplication-TileColor" content="#3372DF">
 
         <!-- Allow user to choose MDL theme -->
-        {{ if isset .Site.Params "mdlPrimary" }}
-          {{ $.Scratch.Set "mdlPrimary" .Site.Params.mdlPrimary }}
-        {{ else }}
-          {{ $.Scratch.Set "mdlPrimary" "blue_grey" }}
-        {{ end }}
-        {{ if isset .Site.Params "mdlAccent" }}
-          {{ $.Scratch.Set "mdlAccent" .Site.Params.mdlAccent }}
-        {{ else }}
-          {{ $.Scratch.Set "mdlAccent" "orange" }}
-        {{ end }}
+        <!-- Allow user to choose MDL theme -->
+        {{- if .Site.Params.mdlPrimary }}
+            {{- $.Scratch.Set "mdlPrimary" .Site.Params.mdlPrimary }}
+        {{- else }}
+            {{- $.Scratch.Set "mdlPrimary" "grey" }}
+        {{- end }}
+        {{- if .Site.Params.mdlAccent }}
+            {{- $.Scratch.Set "mdlAccent" .Site.Params.mdlAccent }}
+        {{- else }}
+            {{- $.Scratch.Set "mdlAccent" "orange" }}
+        {{- end -}}
         <link href='//fonts.googleapis.com/css?family=Roboto:400,300,700|Noto+Serif:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
         <link href="https://fonts.googleapis.com/css?family=PT+Sans+Caption" rel="stylesheet" type='text/css'>
         <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
