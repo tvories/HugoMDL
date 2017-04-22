@@ -15,7 +15,7 @@
             </nav>
         </div>
     </header>
-    <div class="mdl-layout__drawer">
+    <div class="mdl-layout__drawer mdl-layout--small-screen-only">
         {{ if eq .Title "Projects" }}<span class="mdl-layout-title">{{ title .Title }}</span>{{end}}
         <nav class="mdl-navigation">
         {{ range .Site.Menus.main }}
