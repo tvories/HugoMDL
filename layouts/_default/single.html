@@ -2,11 +2,11 @@
 
 <div class="hugo-blog__posts mdl-grid">
     <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
-        
+
         <div class="mdl-card__media mdl-color-text--grey-50" style="{{with .Params.cardheaderimage}}background-image: url('{{.}}');{{end}} {{with .Params.cardbackground}}background-color:{{.}};{{end}}">
             <h3 {{ with .Params.cardtitlecolor }}style="color:{{.}};"{{end}}>{{ title .Title }}</h3>
         </div>
-          
+
         <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
             <div>
                 <strong>{{ .Params.author.name }}</strong>
@@ -14,15 +14,15 @@
             </div>
             <div class="section-spacer"></div>
         </div>
-            
+
         <div class="mdl-color-text--grey-700 mdl-card__supporting-text">
             {{ .Content }}
         </div>
-        
-        <div class="mdl-color-text--primary-contrast mdl-card__supporting-text comments"> 
+
+        <div class="mdl-color-text--primary-contrast mdl-card__supporting-text comments">
             <a href={{ .Params.author.website }}>{{ .Params.author.name }}</a>
             <p>{{ .Params.author.description }}</p>
-        </div>  
+        </div>
     </div>
 </div>
 
